@@ -1,0 +1,70 @@
+site_name: Dave's Info Hub
+site_url: https://example.com
+
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Virtual:
+      - Openshift:  kbr/1.md
+      - Openstack:  kbr/2.md
+      - Docker:  kbr/3.md
+  - Kubernetes:
+      - Kuber1: kbr/1.md
+      - Kuber2: kbr/2.md
+  - Art Stuff:
+      - Spanish Artists: art/art.md
+
+
+
+plugins:
+  - search
+
+
+
+theme:
+  logo: img/favicon-32x32.png
+  favicon: img/favicon-16x16.png
+  name: material
+  features:
+    #- navigation.tabs
+    #- navigation.tabs.sticky
+    #- navigation.tabs
+    #- navigation.sections
+    #- navigation.expand
+    #- navigation.path
+    #- toc.follow
+    - navigation.footer
+    #- navigation_depth: 1
+    # Code
+    - content.code.copy
+    - content.tabs.link
+    - content.code.select
+    - content.code.annotate
+
+
+
+copyright: Copyright &copy; 2025 - 2025 Dave Kerley
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+     alternate_style: true
+  # Code extensions
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  #
+  - attr_list
+  - md_in_html
+  # Lists
+  - def_list
+  - pymdownx.tasklist:
+     custom_checkbox: true
+
+extra_css:
+  - stylesheets/extra.css
